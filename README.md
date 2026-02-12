@@ -1,16 +1,48 @@
-# login_with_rive_animation_5sa_26_1
+# 🐻 Interactive Rive Login - Flutter
 
-A new Flutter project.
+A modern, interactive login screen built with **Flutter** that leverages the power of **Rive** to create a dynamic user experience. The animation reacts to user input in real-time, making the authentication process engaging and fun.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+- **Interactive Character:** A functional Rive animation (The Bear) that tracks the user's input focus.
+- **Gaze Tracking:** The character's eyes follow the cursor as you type your email.
+- **Privacy Reaction:** The character covers its eyes ("Hands Up") when the user interacts with the password field.
+- **State Feedback:** Visual cues for success or failure upon login attempts.
+- **Responsive UI:** Clean design adapted to different screen sizes using `MediaQuery`.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧠 Core Concepts
+
+### What is Rive?
+
+**Rive** is a real-time interactive design and animation tool that allows developers to create high-quality vector animations that run on any platform. Unlike static GIFs or videos, Rive animations are lightweight and can be manipulated via code at runtime.
+
+### What is a State Machine?
+
+A **State Machine** in Rive is a visual logic builder used to define the animation's behavior. It allows the character to transition between different states (e.g., _Idle_, _Checking_, _HandsUp_, _Success_, _Fail_) based on specific **inputs** (Booleans or Numbers) triggered by the Flutter code.
+
+---
+
+## 🛠 Technologies Used
+
+- **Framework:** Flutter 3.x 💙
+- **Language:** Dart 🎯
+- **Animation Engine:** Rive Package (`rive`) 🎭
+- **IDE:** Visual Studio Code / Android Studio
+
+---
+
+## 📂 Project Structure
+
+The core logic of the application is organized as follows:
+
+```text
+lib/
+├── main.dart             # Application entry point.
+└── login_screen.dart     # Main UI containing the TextFields and RiveController logic.
+assets/
+└── animated_login_bear.riv # The Rive binary file containing the animation and State Machine.
+```
